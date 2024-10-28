@@ -1,0 +1,14 @@
+{
+  "depcheck": {
+    "ignoreMatches": [
+      "typescript",
+      "tsx",
+      "esbuild",
+      "constructs",
+      "aws-cdk-lib",
+      "aws-cdk",
+      "@aws-amplify/backend-cli",
+      "@aws-amplify/backend"
+    ]
+  }
+}
