@@ -77,13 +77,13 @@ function PublicAppBar({ darkMode, toggleTheme }) {
       <AppBar position="fixed" sx={{ backgroundColor: darkMode ? darkTheme.palette.primary.main : lightTheme.palette.primary.main }}>
         <Toolbar>
           <IconButton onClick={() => router.push('/')}>
-            <RocketLaunchIcon sx={{ fontSize: 35 }} color={darkMode ? darkTheme.palette.primary.contrastText : lightTheme.palette.primary.contrastText} />
+            <RocketLaunchIcon sx={{ fontSize: 35, color: '#ffffff' }} />
           </IconButton>
           <Typography
             variant="h5"
             component="div"
             sx={{ flexGrow: 1 }}
-            color={darkMode ? darkTheme.palette.primary.contrastText : lightTheme.palette.primary.contrastText}
+            color={darkMode ? darkTheme.palette.primary.white : lightTheme.palette.primary.white}
           >
             MyBase
           </Typography>
@@ -177,7 +177,7 @@ function AuthenticatedAppBar({ darkMode, toggleTheme }) {
             />
           </IconButton>
           <IconButton onClick={handleHomeClick}>
-            <RocketLaunchIcon sx={{ fontSize: 35 }} color={darkMode ? darkTheme.palette.primary.contrastText : lightTheme.palette.primary.contrastText} />
+            <RocketLaunchIcon sx={{ fontSize: 35, color: '#ffffff' }} />
           </IconButton>
           <Typography
             variant="h4"
@@ -188,7 +188,7 @@ function AuthenticatedAppBar({ darkMode, toggleTheme }) {
               textDecoration: 'none',
               cursor: 'pointer'
             }}
-            color={darkMode ? darkTheme.palette.primary.contrastText : lightTheme.palette.primary.contrastText}
+            color={darkMode ? darkTheme.palette.primary.white : lightTheme.palette.primary.white}
           >
             MyBase
           </Typography>
