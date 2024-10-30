@@ -10,10 +10,10 @@ export const auth = defineAuth({
     //email: true,
     email: {
       verificationEmailStyle: "CODE",
-      verificationEmailSubject: "Código de Acesso: IrraBase",
+      verificationEmailSubject: "Código de Acesso: MyBase",
       verificationEmailBody: (createCode) => `Use o código a seguir para redefinir sua senha: ${createCode()}`,
       userInvitation:{
-        emailSubject: "Dados de Acesso: IrraBase",
+        emailSubject: "Dados de Acesso: MyBase",
         emailBody: (user, code) =>
           `Segue abaixo dados para acesso ao nosso app: <br>
           <br>

@@ -3,7 +3,7 @@ import { auth } from "./auth/resource";
 import { data } from "./data/resource";
 import { cognitoUserPoolsTokenProvider } from "aws-amplify/auth/cognito";
 import { sessionStorage } from "aws-amplify/utils";
-import { irraBase } from "./storage/resource";
+import { MyBase } from "./storage/resource";
 
 /**
  * @see https://docs.amplify.aws/react/build-a-backend/ to add storage, functions, and more
@@ -14,7 +14,7 @@ cognitoUserPoolsTokenProvider.setKeyValueStorage(sessionStorage);
 const backend = defineBackend({
   auth,
   data,
-  irraBase,
+  MyBase,
 });
 
 const { cfnIdentityPool, cfnUserPool } = backend.auth.resources.cfnResources;

@@ -95,12 +95,11 @@ const typography = {
   },
 };
 
-// Tema claro inspirado no Discord
 export const lightTheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#5865F2', // Cor accent do Discord
+      main: '#5865F2',
       light: '#7983F5',
       dark: '#4752C4',
       contrastText: '#FFFFFF',
@@ -108,39 +107,39 @@ export const lightTheme = createTheme({
       white: '#ffffff',
     },
     secondary: {
-      main: '#747F8D', // Cor text secondary do tema claro
+      main: '#747F8D',
       light: '#95A0B0',
       dark: '#5C646F',
     },
     background: {
-      default: '#FFFFFF', // Background do tema claro
-      paper: '#F2F3F5',  // Secondary do tema claro
+      default: '#FFFFFF',
+      paper: '#F2F3F5', 
       hover: {
         paper: '#E3E5E8',
       }
     },
     text: {
-      primary: '#2E3338',    // Text primary do tema claro
-      secondary: '#747F8D',  // Text secondary do tema claro
+      primary: '#2E3338',    
+      secondary: '#747F8D',  
       disabled: '#C7CCD1',
     },
     error: {
-      main: '#ED4245',    // Error do Discord
+      main: '#ED4245',   
       light: '#F16D6F',
       dark: '#BE3437',
     },
     warning: {
-      main: '#FAA61A',    // Warning do Discord
+      main: '#FAA61A',    
       light: '#FBB746',
       dark: '#C88415',
     },
     info: {
-      main: '#5865F2',    // Usando o accent como info
+      main: '#5865F2',    
       light: '#7983F5',
       dark: '#4752C4',
     },
     success: {
-      main: '#3BA55C',    // Success do Discord
+      main: '#3BA55C',  
       light: '#5BB77A',
       dark: '#2F844A',
     },
@@ -148,12 +147,11 @@ export const lightTheme = createTheme({
   typography,
 });
 
-// Tema escuro inspirado no Discord
 export const darkTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#5865F2',    // Mantendo a mesma cor accent
+      main: '#5865F2',
       light: '#7983F5',
       dark: '#4752C4',
       contrastText: '#FFFFFF',
@@ -161,39 +159,39 @@ export const darkTheme = createTheme({
       white: '#ffffff',
     },
     secondary: {
-      main: '#B9BBBE',    // Text secondary do tema escuro
+      main: '#B9BBBE',
       light: '#C9CACD',
       dark: '#949597',
     },
     background: {
-      default: '#36393F', // Background do tema escuro
-      paper: '#2F3136',   // Secondary do tema escuro
+      default: '#36393F', 
+      paper: '#2F3136', 
       hover: {
         paper: '#4F545C',
       }
     },
     text: {
-      primary: '#FFFFFF',    // Text primary do tema escuro
-      secondary: '#B9BBBE',  // Text secondary do tema escuro
+      primary: '#FFFFFF',    
+      secondary: '#B9BBBE',  
       disabled: '#72767D',
     },
     error: {
-      main: '#ED4245',    // Error do Discord
+      main: '#ED4245',    
       light: '#F16D6F',
       dark: '#BE3437',
     },
     warning: {
-      main: '#FAA61A',    // Warning do Discord
+      main: '#FAA61A',    
       light: '#FBB746',
       dark: '#C88415',
     },
     info: {
-      main: '#5865F2',    // Usando o accent como info
+      main: '#5865F2',    
       light: '#7983F5',
       dark: '#4752C4',
     },
     success: {
-      main: '#3BA55C',    // Success do Discord
+      main: '#3BA55C', 
       light: '#5BB77A',
       dark: '#2F844A',
     },

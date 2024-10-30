@@ -1,8 +1,8 @@
 // amplify\storage\resource.ts
 import { defineStorage } from "@aws-amplify/backend";
 
-export const irraBase = defineStorage({
-  name: "irraBase",
+export const MyBase = defineStorage({
+  name: "MyBase",
   isDefault: true, // identify your default storage bucket (required)
   access: (allow) => ({
     'curriculos/{entity_id}/*': [

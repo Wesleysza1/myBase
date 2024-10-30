@@ -5,7 +5,7 @@ import '@aws-amplify/ui-react/styles.css';
 import './custom-auth-styles.css';
 import { Typography } from '@mui/material';
 import { AuthContext } from './AuthContext';
-import LogoIrraGreen from './icons/LogoIrraGreen';
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 
 const messages = {
   'Incorrect username or password.': 'Usuário ou senha incorretos.',
@@ -35,8 +35,8 @@ const components = {
     const { tokens } = useTheme();
     return (
       <View textAlign="center" padding={tokens.space.large}>
-        <LogoIrraGreen sx={{ fontSize: 70 }}/>
-        <Typography variant='h2' sx={{ color: '#38d430' }}>IrraBase</Typography>
+        <RocketLaunchIcon sx={{ fontSize: 70, color: '#5865F2' }}/>
+        <Typography variant='h2' sx={{ color: '#5865F2' }}>MyBase</Typography>
       </View>
     );
   },

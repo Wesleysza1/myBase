@@ -65,7 +65,7 @@ function isPublicRoute(pathname) {
 
 function useTituloDinamico() {
   const pathname = usePathname();
-  return pageTitles[pathname] || 'IrraBase'; // Retorna o título com base na rota
+  return pageTitles[pathname] || 'MyBase'; // Retorna o título com base na rota
 }
 
 // Componente para a barra de navegação pública
@@ -85,7 +85,7 @@ function PublicAppBar({ darkMode, toggleTheme }) {
             sx={{ flexGrow: 1 }}
             color={darkMode ? darkTheme.palette.primary.contrastText : lightTheme.palette.primary.contrastText}
           >
-            IrraBase
+            MyBase
           </Typography>
           <ThemeSwitch darkMode={darkMode} toggleTheme={toggleTheme} />
         </Toolbar>
@@ -182,7 +182,7 @@ function AuthenticatedAppBar({ darkMode, toggleTheme }) {
             }}
             color={darkMode ? darkTheme.palette.primary.contrastText : lightTheme.palette.primary.contrastText}
           >
-            IrraBase
+            MyBase
           </Typography>
 
           <ThemeSwitch darkMode={darkMode} toggleTheme={toggleTheme} />
