@@ -1,18 +1,16 @@
-/* custom-auth-styles.css */
-
 :root {
-  --amplify-colors-background-primary: #38d430;
-  --amplify-colors-background-secondary: #def8dd;
-  --amplify-colors-brand-primary-10: #e6f7e5;
-  --amplify-colors-brand-primary-80: #38d430;
-  --amplify-colors-brand-primary-90: #279721;
-  --amplify-colors-brand-primary-100: #38d430;
-  --amplify-colors-font-interactive: #1a1d1a;
-  --amplify-colors-font-primary: #1a1d1a;
-  --amplify-colors-font-secondary: #1a1d1a;
-  --amplify-colors-font-disabled: #e2e8e2;
-  --amplify-colors-border-primary: #38d430;
-  --amplify-colors-border-secondary: #0f8509;
+  --amplify-colors-background-primary: #5865F2; /* Usando a cor primary.main */
+  --amplify-colors-background-secondary: #F2F3F5; /* Usando a cor background.paper */
+  --amplify-colors-brand-primary-10: #E3E5E8; /* Usando a cor background.hover.paper */
+  --amplify-colors-brand-primary-80: #5865F2; /* Usando a cor primary.main */
+  --amplify-colors-brand-primary-90: #4752C4; /* Usando a cor primary.dark */
+  --amplify-colors-brand-primary-100: #5865F2; /* Usando a cor primary.main */
+  --amplify-colors-font-interactive: #2E3338; /* Usando a cor text.primary */
+  --amplify-colors-font-primary: #2E3338; /* Usando a cor text.primary */
+  --amplify-colors-font-secondary: #747F8D; /* Usando a cor text.secondary */
+  --amplify-colors-font-disabled: #C7CCD1; /* Usando a cor text.disabled */
+  --amplify-colors-border-primary: #5865F2; /* Usando a cor primary.main */
+  --amplify-colors-border-secondary: #4752C4; /* Usando a cor primary.dark */
 }
 
 /* Estilo atualizado para o card */
@@ -31,8 +29,8 @@
 
 /* Estilos atualizados para os botões */
 .amplify-button {
-  background-color: #000000;
-  color: #def8dd;
+  background-color: var(--amplify-colors-font-primary);
+  color: var(--amplify-colors-background-secondary);
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
@@ -41,32 +39,32 @@
 }
 
 .amplify-button:hover {
-  background-color: #1a1d1a;
+  background-color: #383f45;
 }
 
 /* Estilos para inputs */
 .amplify-input {
   background-color: var(--amplify-colors-background-primary);
-  color: var(--amplify-colors-font-interactive);
+  color: var(--amplify-colors-font-primary);
   border: 1px solid var(--amplify-colors-border-secondary);
   border-radius: 4px;
   padding: 8px 12px;
 }
 
 .amplify-input:focus {
-  border-color: #1a1d1a;
-  box-shadow: 0 0 0 2px rgba(56, 212, 48, 0.2);
+  border-color: var(--amplify-colors-font-primary);
+  box-shadow: 0 0 0 2px rgba(88, 101, 242, 0.2); /* Usando primary.main */
 }
 
 /* Estilos para labels */
 .amplify-label {
-  color: var(--amplify-colors-font-secondary);
+  color: var(--amplify-colors-font-primary);
   font-weight: 500;
 }
 
 /* Estilos para links */
 .amplify-link {
-  color: var(--amplify-colors-brand-primary-80);
+  color: var(--amplify-colors-font-primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -89,9 +87,9 @@
 
 /* Estilo para mensagens de erro */
 .amplify-alert--error {
-  background-color: #fde8e8;
-  border-color: #ec2b1d;
-  color: #a42016;
+  background-color: #fde8e8; /* Mantendo a cor para erro leve */
+  border-color: #ED4245; /* Usando error.main */
+  color: #BE3437; /* Usando error.dark */
   border-radius: 4px;
   padding: 10px;
   margin-top: 10px;
@@ -113,7 +111,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  background-color: #000000;
+  background-color: var(--amplify-colors-background-primary);
 }
 
 .auth-header {
@@ -121,16 +119,16 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  background-color: #38d430;
+  background-color: var(--amplify-colors-background-primary);
 }
 
 .auth-icon {
-  color: #38d430;
+  color: var(--amplify-colors-brand-primary-100);
 }
 
 .auth-title {
   margin-top: 10px;
-  color: #000000;
+  color: var(--amplify-colors-background-secondary);
   font-size: 24px;
   font-weight: bold;
 }

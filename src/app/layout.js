@@ -39,9 +39,9 @@ import {
   ExpandLess,
   ExpandMore,
 } from '@mui/icons-material';
-import LogoIrraBlack from '@/components/icons/LogoIrraBlack';
 import AnimatedIconButton from '@/components/AnimatedIconButton';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 
 // Theme and Page Titles
 import { lightTheme, darkTheme } from './theme';
@@ -77,7 +77,7 @@ function PublicAppBar({ darkMode, toggleTheme }) {
       <AppBar position="fixed" sx={{ backgroundColor: darkMode ? darkTheme.palette.primary.main : lightTheme.palette.primary.main }}>
         <Toolbar>
           <IconButton onClick={() => router.push('/')}>
-            <LogoIrraBlack sx={{ fontSize: 35 }} />
+            <RocketLaunchIcon sx={{ fontSize: 35 }} color={darkMode ? darkTheme.palette.primary.contrastText : lightTheme.palette.primary.contrastText} />
           </IconButton>
           <Typography
             variant="h5"
@@ -158,7 +158,15 @@ function AuthenticatedAppBar({ darkMode, toggleTheme }) {
             color="inherit"
             aria-label="Menu"
             title='Menu'
-            sx={{ mr: 2, paddingTop: 2, color: darkMode ? darkTheme.palette.primary.contrastText : lightTheme.palette.primary.contrastText, '&:hover': { color: '#ffffff' } }}
+            sx={{ 
+              mr: 2,
+              paddingTop: 2,
+              marginRight: -3,
+              color: darkMode ? darkTheme.palette.primary.contrastText : lightTheme.palette.primary.contrastText,
+              '&:hover': { 
+                color: '#ffffff' 
+              } 
+            }}
             onClick={toggleDrawer(true)}
             disableRipple
           >
@@ -169,7 +177,7 @@ function AuthenticatedAppBar({ darkMode, toggleTheme }) {
             />
           </IconButton>
           <IconButton onClick={handleHomeClick}>
-            <LogoIrraBlack sx={{ fontSize: 40 }} />
+            <RocketLaunchIcon sx={{ fontSize: 35 }} color={darkMode ? darkTheme.palette.primary.contrastText : lightTheme.palette.primary.contrastText} />
           </IconButton>
           <Typography
             variant="h4"
