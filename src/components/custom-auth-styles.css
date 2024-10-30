@@ -1,0 +1,134 @@
+:root {
+  --amplify-colors-background-primary: #5865F2; /* Usando a cor primary.main */
+  --amplify-colors-background-secondary: #F2F3F5; /* Usando a cor background.paper */
+  --amplify-colors-brand-primary-10: #E3E5E8; /* Usando a cor background.hover.paper */
+  --amplify-colors-brand-primary-80: #5865F2; /* Usando a cor primary.main */
+  --amplify-colors-brand-primary-90: #4752C4; /* Usando a cor primary.dark */
+  --amplify-colors-brand-primary-100: #5865F2; /* Usando a cor primary.main */
+  --amplify-colors-font-interactive: #2E3338; /* Usando a cor text.primary */
+  --amplify-colors-font-primary: #2E3338; /* Usando a cor text.primary */
+  --amplify-colors-font-secondary: #747F8D; /* Usando a cor text.secondary */
+  --amplify-colors-font-disabled: #C7CCD1; /* Usando a cor text.disabled */
+  --amplify-colors-border-primary: #5865F2; /* Usando a cor primary.main */
+  --amplify-colors-border-secondary: #4752C4; /* Usando a cor primary.dark */
+}
+
+/* Estilo atualizado para o card */
+.amplify-card {
+  background-color: var(--amplify-colors-background-secondary);
+  border: 2px solid var(--amplify-colors-border-primary);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Estilo para todos os textos dentro do card */
+.amplify-card * {
+  color: var(--amplify-colors-font-interactive);
+}
+
+/* Estilos atualizados para os botões */
+.amplify-button {
+  background-color: var(--amplify-colors-font-primary);
+  color: var(--amplify-colors-background-secondary);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.amplify-button:hover {
+  background-color: #383f45;
+}
+
+/* Estilos para inputs */
+.amplify-input {
+  background-color: var(--amplify-colors-background-primary);
+  color: var(--amplify-colors-font-primary);
+  border: 1px solid var(--amplify-colors-border-secondary);
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.amplify-input:focus {
+  border-color: var(--amplify-colors-font-primary);
+  box-shadow: 0 0 0 2px rgba(88, 101, 242, 0.2); /* Usando primary.main */
+}
+
+/* Estilos para labels */
+.amplify-label {
+  color: var(--amplify-colors-font-primary);
+  font-weight: 500;
+}
+
+/* Estilos para links */
+.amplify-link {
+  color: var(--amplify-colors-font-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.amplify-link:hover {
+  color: var(--amplify-colors-brand-primary-90);
+  text-decoration: underline;
+}
+
+/* Estilo para o modal */
+.amplify-modal {
+  background-color: var(--amplify-colors-background-primary);
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.amplify-modal__content {
+  background-color: var(--amplify-colors-background-secondary);
+}
+
+/* Estilo para mensagens de erro */
+.amplify-alert--error {
+  background-color: #fde8e8; /* Mantendo a cor para erro leve */
+  border-color: #ED4245; /* Usando error.main */
+  color: #BE3437; /* Usando error.dark */
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Estilo para tabs */
+.amplify-tabs-item[data-state="active"] {
+  color: var(--amplify-colors-brand-primary-80);
+  border-bottom-color: var(--amplify-colors-brand-primary-80);
+}
+
+.amplify-tabs-item:hover {
+  color: var(--amplify-colors-brand-primary-90);
+}
+
+/* Estilos para o wrapper de autenticação personalizado */
+.auth-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  background-color: var(--amplify-colors-background-primary);
+}
+
+.auth-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: var(--amplify-colors-background-primary);
+}
+
+.auth-icon {
+  color: var(--amplify-colors-brand-primary-100);
+}
+
+.auth-title {
+  margin-top: 10px;
+  color: var(--amplify-colors-background-secondary);
+  font-size: 24px;
+  font-weight: bold;
+}

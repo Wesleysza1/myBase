@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::amplify-d1oljnzotsq6f5-dev--irrabasebucket40552a5a-hw9wvdgriufm/public/documentos/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject"],
+      "Resource": "arn:aws:s3:::amplify-d1oljnzotsq6f5-dev--irrabasebucket40552a5a-hw9wvdgriufm/public/curriculos/*"
+    }
+  ]
+}
