@@ -19,32 +19,37 @@
 
 ## Screenshots
 ### Tela de Login
-![login screen](https://drive.google.com/uc?export=view&id=1WppzDODhgZZAB80p0fwnICwwAU89i_tU)
+<img width="950" alt="login" src="https://github.com/user-attachments/assets/7a7f7f34-d6d1-4235-91c5-c020173157ab">
 
 ### Tema Claro
 | Página | Captura de Tela |
 |--------|----------------|
-| Home |  |
-| Menu | ![screenshot2](./path_to_image2.png) |
-| Cadastro de Profissionais | ![screenshot3](./path_to_image3.png) |
-| Consulta de Profissionais | ![screenshot4](./path_to_image4.png) |
-| Política de Privacidade | ![screenshot5](./path_to_image5.png) |
+| Home | <img width="667" alt="home_white" src="https://github.com/user-attachments/assets/dcc31c68-d09b-417a-a273-89a19485e65f"> |
+| Menu | <img width="674" alt="menu_white" src="https://github.com/user-attachments/assets/e3e78ac2-ae09-4172-ad1d-4b2dd6417572"> |
+| Cadastro de Profissionais | <img width="666" alt="cadastro_white_public" src="https://github.com/user-attachments/assets/613f960d-78a3-47c2-b201-63ecba278806"> |
+| Consulta de Profissionais | <img width="664" alt="consulta_white" src="https://github.com/user-attachments/assets/01c04931-4515-472e-b0dd-6f08d8d0635c"> |
+| Política de Privacidade | <img width="666" alt="privacidade_white" src="https://github.com/user-attachments/assets/f3c3c0b8-9639-4f69-9bbc-9e41e98a9e9b"> |
 
 ### Tema Escuro
 | Página | Captura de Tela |
 |--------|----------------|
-| Home | ![screenshot1](./path_to_image1.png) |
-| Menu | ![screenshot2](./path_to_image2.png) |
-| Cadastro de Profissionais | ![screenshot3](./path_to_image3.png) |
-| Consulta de Profissionais | ![screenshot4](./path_to_image4.png) |
-| Política de Privacidade | ![screenshot5](./path_to_image5.png) |
+| Home | <img width="668" alt="home_black" src="https://github.com/user-attachments/assets/6ddc828d-f35c-4795-9113-95618224fc33"> |
+| Menu | <img width="673" alt="menu_black" src="https://github.com/user-attachments/assets/899f1be5-fa30-4844-a9af-1d2c16cfe63f"> |
+| Cadastro de Profissionais | <img width="667" alt="cadastro_black_public" src="https://github.com/user-attachments/assets/b976ba9e-2239-49bf-a61a-2272dc9e0d6a"> |
+| Consulta de Profissionais | <img width="670" alt="consulta_black" src="https://github.com/user-attachments/assets/7666a526-43e5-48fe-8a81-393c0a927be0"> |
+| Política de Privacidade | <img width="668" alt="privacidade_black" src="https://github.com/user-attachments/assets/d9ac3dff-c1fa-4675-a123-3a0807b33a71"> |
 
 ## Relatórios de Segurança
 
 Este projeto segue práticas de segurança recomendadas. Abaixo estão alguns relatórios de segurança gerados:
 
-- [Relatório de Segurança AWS Amplify](./path_to_security_report1.pdf)
-- [Relatório de Vulnerabilidades](./path_to_security_report2.pdf)
+| Scan Site | Scan Result |
+|--------|----------------|
+| [immuniweb](www.immuniweb.com) | ![image](https://github.com/user-attachments/assets/90bfe348-726b-4bb0-b05b-44132cd4f935) |
+| [pentest-tools](https://pentest-tools.com) | ![image](https://github.com/user-attachments/assets/1358dde3-f1e3-4065-a6fc-bec3c3da8607) |
+| [sucuri](sitecheck.sucuri.net) | ![image](https://github.com/user-attachments/assets/c92c1c29-3572-47f2-a7d4-4f903b4b4804) |
+| [sitelock](www.sitelock.com) | ![image](https://github.com/user-attachments/assets/b10d06e1-9de2-449d-b785-1d1df9e73a5a) |
+| [securityheaders](securityheaders.com) | ![image](https://github.com/user-attachments/assets/0c4150a6-4f21-4644-85f1-f9f74484ab22) |
 
 ## Configuração do reCaptcha V3
 
