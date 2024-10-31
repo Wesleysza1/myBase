@@ -1,0 +1,134 @@
+<h1 align="center">Welcome to MyBase 👋</h1>
+
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
+
+> MyBase is a web application built with Next.js and hosted on AWS Amplify. The application offers functionalities for managing professionals and documents, using Amplify services like Auth (authentication), Data (database), and Storage (file management). It integrates with Amazon Cognito, Amazon DynamoDB, and Amazon S3 for these features.
+
+## Features
+
+- **Professional Registration (Private)**: Restricted access for authenticated users via Amazon Cognito. Allows adding professionals to the database.
+- **Professional Search (Private)**: Enables users to search, edit, and delete professionals, as well as export data in CSV format.
+- **Privacy Policy (Private)**: View and edit the privacy policy accepted by registered users.
+- **Professional Registration (Public)**: Publicly accessible with Google reCaptcha V3 protection.
+- **Privacy Policy (Public)**: Open for anyone to view, allowing users to review the policy before registration.
+
+## Screenshots
+### Login Screen
+<img width="950" alt="login" src="https://github.com/user-attachments/assets/7a7f7f34-d6d1-4235-91c5-c020173157ab">
+
+### Light Theme
+| Page | Screenshot |
+|--------|----------------|
+| Home | <img width="667" alt="home_white" src="https://github.com/user-attachments/assets/dcc31c68-d09b-417a-a273-89a19485e65f"> |
+| Menu | <img width="674" alt="menu_white" src="https://github.com/user-attachments/assets/e3e78ac2-ae09-4172-ad1d-4b2dd6417572"> |
+| Professional Registration | <img width="666" alt="cadastro_white_public" src="https://github.com/user-attachments/assets/613f960d-78a3-47c2-b201-63ecba278806"> |
+| Professional Search | <img width="664" alt="consulta_white" src="https://github.com/user-attachments/assets/01c04931-4515-472e-b0dd-6f08d8d0635c"> |
+| Privacy Policy | <img width="666" alt="privacidade_white" src="https://github.com/user-attachments/assets/f3c3c0b8-9639-4f69-9bbc-9e41e98a9e9b"> |
+
+### Dark Theme
+| Page | Screenshot |
+|--------|----------------|
+| Home | <img width="668" alt="home_black" src="https://github.com/user-attachments/assets/6ddc828d-f35c-4795-9113-95618224fc33"> |
+| Menu | <img width="673" alt="menu_black" src="https://github.com/user-attachments/assets/899f1be5-fa30-4844-a9af-1d2c16cfe63f"> |
+| Professional Registration | <img width="667" alt="cadastro_black_public" src="https://github.com/user-attachments/assets/b976ba9e-2239-49bf-a61a-2272dc9e0d6a"> |
+| Professional Search | <img width="670" alt="consulta_black" src="https://github.com/user-attachments/assets/7666a526-43e5-48fe-8a81-393c0a927be0"> |
+| Privacy Policy | <img width="668" alt="privacidade_black" src="https://github.com/user-attachments/assets/d9ac3dff-c1fa-4675-a123-3a0807b33a71"> |
+
+## Security Reports
+
+This project follows recommended security practices. Below are some of the generated security scan reports:
+
+| Scan Site | Scan Result |
+|--------|----------------|
+| [immuniweb](www.immuniweb.com) | ![image](https://github.com/user-attachments/assets/90bfe348-726b-4bb0-b05b-44132cd4f935) |
+| [pentest-tools](https://pentest-tools.com) | ![image](https://github.com/user-attachments/assets/1358dde3-f1e3-4065-a6fc-bec3c3da8607) |
+| [sucuri](sitecheck.sucuri.net) | ![image](https://github.com/user-attachments/assets/c92c1c29-3572-47f2-a7d4-4f903b4b4804) |
+| [sitelock](www.sitelock.com) | ![image](https://github.com/user-attachments/assets/b10d06e1-9de2-449d-b785-1d1df9e73a5a) |
+| [securityheaders](securityheaders.com) | ![image](https://github.com/user-attachments/assets/0c4150a6-4f21-4644-85f1-f9f74484ab22) |
+
+## reCaptcha V3 Setup
+
+To set up reCaptcha V3 in your project, add the following variables to your `.env` file:
+
+```
+RECAPTCHA_SITE_KEY=your-site-key
+RECAPTCHA_SECRET_KEY=your-secret-key
+```
+
+An example of these variables can be found in the `.env.example` file.
+
+## Amplify Policy Configuration
+
+Within the `example` folder, there are sample policies for both authenticated and unauthenticated roles, which should be applied to ensure the app functions properly.
+
+- **s3-authenticated-policy.json**:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": [
+        "<S3-Bucket-ARN>",
+        "<S3-Bucket-ARN>/*"
+      ]
+    }
+  ]
+}
+```
+
+- **s3-unauthenticated-policy.json**:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "<S3-Bucket-ARN>/public/documentos/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject"],
+      "Resource": "<S3-Bucket-ARN>/public/curriculos/*"
+    }
+  ]
+}
+```
+
+> Replace `<S3-Bucket-ARN>` with the correct bucket ARN generated by Amplify after the deploy.
+
+## Privacy Policy Example
+
+An example of the privacy policy is also available in the `examples` folder. This file should be uploaded to the S3 bucket within the `public/documentos/` folder.
+
+## Installation
+
+To install the project dependencies, run:
+
+```sh
+npm install
+```
+
+## How to Run
+
+To run the application locally:
+
+```sh
+npm run start
+```
+
+## Author
+
+👤 **Wesley Carvalho**
+
+* LinkedIn: [Wesley Carvalho](https://www.linkedin.com/in/wesleysza12/)
+* GitHub: [@Wesleysza1](https://github.com/Wesleysza1)
