@@ -7,6 +7,8 @@
   </a>
 </p>
 
+> This file is in Portuguese-BR, for an English version follow the link: [English](README.en.md)
+
 > MyBase é uma aplicação web desenvolvida com Next.js e hospedada no AWS Amplify. A aplicação oferece funcionalidades para o gerenciamento de profissionais e documentos, utilizando serviços do Amplify, como Auth (autenticação), Data (banco de dados) e Storage (armazenamento de arquivos). Ela se integra com Amazon Cognito, Amazon DynamoDB e Amazon S3 para essas funcionalidades.
 
 ## Funcionalidades
