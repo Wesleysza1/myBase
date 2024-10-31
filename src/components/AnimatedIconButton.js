@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 import { IconButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import MaozinhaBlack from '@/components/icons/MaozinhaBlack';
-import MaozinhaRockBlack from '@/components/icons/MaozinhaRockBlack';
-import {
-  Menu as MenuIcon,
-} from '@mui/icons-material';
+import { Menu as MenuIcon } from '@mui/icons-material';
+import { lightTheme, darkTheme } from '../app/theme';
 
 const IconWrapper = styled('div')({
-  position: 'relative',
   width: '24px',
   height: '24px',
   display: 'flex',
@@ -16,27 +12,14 @@ const IconWrapper = styled('div')({
   justifyContent: 'center',
 });
 
-const IconContainer = styled('div')(({ isHovered }) => ({
-  position: 'absolute',
+const RotatingIconContainer = styled('div')(({ isHovered }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   width: '100%',
   height: '100%',
-  transition: 'opacity 0.2s ease-in-out',
-  opacity: isHovered ? 0 : 1,
-  backgroundColor: 'transparent'
-}));
-
-const HoverIconContainer = styled('div')(({ isHovered }) => ({
-  position: 'absolute',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '100%',
-  height: '100%',
-  transition: 'opacity 0.2s ease-in-out',
-  opacity: isHovered ? 1 : 0,
+  transition: 'transform 0.3s ease-in-out',
+  transform: isHovered ? 'rotate(90deg)' : 'rotate(0deg)',
   backgroundColor: 'transparent'
 }));
 
@@ -49,10 +32,10 @@ const AnimatedIconButton = ({ darkMode, onClick }) => {
       edge="start"
       color="inherit"
       aria-label="Menu"
-      title=''
+      title=""
       sx={{ 
         mr: 2, 
-        color: darkMode ? '#000000' : '#000000',
+        color: darkMode ? darkTheme.palette.primary.white : lightTheme.palette.primary.white,
         backgroundColor: 'transparent'
       }}
       onClick={onClick}
@@ -60,13 +43,9 @@ const AnimatedIconButton = ({ darkMode, onClick }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <IconWrapper>
-        <IconContainer isHovered={isHovered}>
-          {/* <MaozinhaBlack /> */}
+        <RotatingIconContainer isHovered={isHovered}>
           <MenuIcon />
-        </IconContainer>
-        <HoverIconContainer isHovered={isHovered}>
-          <MaozinhaRockBlack />
-        </HoverIconContainer>
+        </RotatingIconContainer>
       </IconWrapper>
     </IconButton>
   );

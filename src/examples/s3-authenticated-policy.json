@@ -5,8 +5,8 @@
       "Effect": "Allow",
       "Action": "s3:*",
       "Resource": [
-        "arn:aws:s3:::amplify-d2wg6f2825qcue-dev-br-mybasebucket24dbe0f1-wh5qahovlfyc",
-        "arn:aws:s3:::amplify-d2wg6f2825qcue-dev-br-mybasebucket24dbe0f1-wh5qahovlfyc/*"
+        "arn:aws:s3:::amplify-d1k3bli5612zy3-dev-br-mybasebucket24dbe0f1-ofune4ggv0xw",
+        "arn:aws:s3:::amplify-d1k3bli5612zy3-dev-br-mybasebucket24dbe0f1-ofune4ggv0xw/*"
       ]
     }
   ]
